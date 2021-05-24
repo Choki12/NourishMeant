@@ -19,7 +19,7 @@ namespace NourishMeant
         //fading out logo screen
         int mAlphaValue = 1;
         int mFadeIncrement = 3;
-        double ScreenDelay = 6;
+        double ScreenDelay = 8;
         double mFadeDelay = .035;
 
         int counter = 0;
@@ -113,7 +113,7 @@ namespace NourishMeant
             _spriteBatch.Begin();
 
             //spriteBatch draw
-            _spriteBatch.Draw(background, new Vector2(0, 0), new Color (255, 255, 255, MathHelper.Clamp(mAlphaValue, 0, 255)));
+            _spriteBatch.Draw(background, new Vector2(0, 200), new Color (255, 255, 255, MathHelper.Clamp(mAlphaValue, 0, 255)));
             //_spriteBatch.Draw(mySprite, new Vector2(150, 150), Color.White);
             
             _spriteBatch.End();
