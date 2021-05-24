@@ -130,6 +130,7 @@
     <None Include="Content\fridge open2.xnb" />
     <None Include="Content\openfridge.xnb" />
     <None Include="Content\openfridge1.xnb" />
+    <None Include="Content\openfridge3.xnb" />
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
