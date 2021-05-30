@@ -9,7 +9,8 @@ namespace NourishMeant
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        private SpriteBatch _spriteBatch2;
+        bool _firstUpdate;
+        //private SpriteBatch _spriteBatch2;
 
         Texture2D mySprite; //will figure out what to use this for
         Texture2D background;
@@ -19,9 +20,9 @@ namespace NourishMeant
         //fading out logo screen
         int mAlphaValue = 1;
         int mFadeIncrement = 3;
-        double ScreenDelay = 8;
+        double ScreenDelay = 6;
         double mFadeDelay = .035;
-
+ 
         int counter = 0;
 
         /*Game states for managing game behavior */
@@ -44,15 +45,22 @@ namespace NourishMeant
             };*/
 
             _graphics.SupportedOrientations = DisplayOrientation.LandscapeLeft | DisplayOrientation.LandscapeRight;
-            TouchPanel.EnabledGestures = GestureType.None;
+            
 
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+
+            TouchPanel.GetCapabilities();
+
+            TouchPanel.EnabledGestures = GestureType.Tap | GestureType.DoubleTap | GestureType.Hold | GestureType.Pinch |
+                             GestureType.FreeDrag | GestureType.DragComplete | GestureType.Flick | GestureType.HorizontalDrag |
+                             GestureType.VerticalDrag;
         }
 
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            TouchPanel.GetCapabilities();
 
             base.Initialize();
         }
@@ -70,14 +78,22 @@ namespace NourishMeant
 
             GameStateManager.Instance.SetContent(Content);
             GameStateManager.Instance.AddNewScreen(new Play(GraphicsDevice));
-            
+          
         }
 
         protected override void Update(GameTime gameTime)
         {
+            if (_firstUpdate)
+            {
+                typeof(Microsoft.Xna.Framework.Input.Touch.TouchPanel).GetField("_touchScale", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static).SetValue(null, Vector2.One);
+                _firstUpdate = false;
+            }
+
+
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+        
             // TODO: Add your update logic here
 
 

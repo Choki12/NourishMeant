@@ -145,6 +145,18 @@
 /processorParam:TextureFormat=Color
 /build:7f.png
 
+#begin btnNext.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:btnNext.png
+
 #begin CharactersBlack_Line1.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -668,6 +680,18 @@
 /processorParam:TextureFormat=Color
 /build:fridge open2.png
 
+#begin hide.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:hide.png
+
 #begin openfridge.jpg
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -703,6 +727,30 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:openfridge3.png
+
+#begin pixelplate.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:pixelplate.jpg
+
+#begin pixelplate1.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:pixelplate1.jpg
 
 #begin yp_apple.png
 /importer:TextureImporter

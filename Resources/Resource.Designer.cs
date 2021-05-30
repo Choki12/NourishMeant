@@ -25,8 +25,18 @@ namespace NourishMeant
 		
 		public static void UpdateIdValues()
 		{
-			global::SQLiteConnectionBuddy.Android.Resource.String.ApplicationName = global::NourishMeant.Resource.String.ApplicationName;
-			global::SQLiteConnectionBuddy.Android.Resource.String.Hello = global::NourishMeant.Resource.String.Hello;
+			global::InputHelper.Android.Resource.String.ApplicationName = global::NourishMeant.Resource.String.ApplicationName;
+			global::InputHelper.Android.Resource.String.Hello = global::NourishMeant.Resource.String.Hello;
+			global::MatrixExtensions.Android.Resource.String.ApplicationName = global::NourishMeant.Resource.String.ApplicationName;
+			global::MatrixExtensions.Android.Resource.String.Hello = global::NourishMeant.Resource.String.Hello;
+			global::PrimitiveBuddy.Android.Resource.String.ApplicationName = global::NourishMeant.Resource.String.ApplicationName;
+			global::PrimitiveBuddy.Android.Resource.String.Hello = global::NourishMeant.Resource.String.Hello;
+			global::RandomExtensions.Android.Resource.String.ApplicationName = global::NourishMeant.Resource.String.ApplicationName;
+			global::RandomExtensions.Android.Resource.String.Hello = global::NourishMeant.Resource.String.Hello;
+			global::TouchScreenBuddy.Android.Resource.String.ApplicationName = global::NourishMeant.Resource.String.ApplicationName;
+			global::TouchScreenBuddy.Android.Resource.String.Hello = global::NourishMeant.Resource.String.Hello;
+			global::Vector2Extensions.Android.Resource.String.ApplicationName = global::NourishMeant.Resource.String.ApplicationName;
+			global::Vector2Extensions.Android.Resource.String.Hello = global::NourishMeant.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

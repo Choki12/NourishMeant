@@ -63,6 +63,7 @@
     <Compile Include="GameStateManager.cs" />
     <Compile Include="IGameState.cs" />
     <Compile Include="Menu.cs" />
+    <Compile Include="Plate.cs" />
     <Compile Include="Play.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +84,7 @@
     <None Include="Content\5.xnb" />
     <None Include="Content\6f.xnb" />
     <None Include="Content\7f.xnb" />
+    <None Include="Content\btnNext.xnb" />
     <None Include="Content\CharactersBlack_Line1.xnb" />
     <None Include="Content\CharactersBlack_Line2.xnb" />
     <None Include="Content\CharactersBlack_Line3.xnb" />
@@ -128,9 +130,12 @@
     <None Include="Content\Font.spritefont" />
     <None Include="Content\fridge open.xnb" />
     <None Include="Content\fridge open2.xnb" />
+    <None Include="Content\hide.xnb" />
     <None Include="Content\openfridge.xnb" />
     <None Include="Content\openfridge1.xnb" />
     <None Include="Content\openfridge3.xnb" />
+    <None Include="Content\pixelplate.xnb" />
+    <None Include="Content\pixelplate1.xnb" />
     <None Include="Content\yp_apple.xnb" />
     <None Include="Content\yp_avocado.xnb" />
     <None Include="Content\yp_bacon.xnb" />
@@ -220,8 +225,14 @@
   <ItemGroup>
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
     <PackageReference Include="MonoGame.Framework.Android" Version="3.8.0.1641" />
-    <PackageReference Include="SQLiteConnectionBuddy">
-      <Version>1.0.23</Version>
+    <PackageReference Include="SharpDX.Direct2D1">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="SharpDX.Direct3D9">
+      <Version>4.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="TouchScreenBuddy">
+      <Version>2.0.13</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
