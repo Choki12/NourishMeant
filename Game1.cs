@@ -7,6 +7,7 @@ namespace NourishMeant
 {
     public class Game1 : Game
     {
+        
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         bool _firstUpdate;
@@ -15,8 +16,8 @@ namespace NourishMeant
         Texture2D mySprite; //will figure out what to use this for
         Texture2D background;
         //Texture2D background2;
-        
        
+
         //fading out logo screen
         int mAlphaValue = 1;
         int mFadeIncrement = 3;

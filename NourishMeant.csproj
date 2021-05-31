@@ -61,6 +61,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameState.cs" />
     <Compile Include="GameStateManager.cs" />
+    <Compile Include="Globals.cs" />
     <Compile Include="IGameState.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Plate.cs" />

@@ -20,10 +20,15 @@ namespace NourishMeant
     {
         SpriteFont font;
         Texture2D plate;
+        public string[] selectedFood;
+       
+
+
         public Plate(GraphicsDevice graphicsDevice) : base(graphicsDevice)
         {
             
-
+            
+            
 
         }
         public override void Draw(SpriteBatch spriteBatch)
@@ -32,7 +37,14 @@ namespace NourishMeant
 
 
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
-            spriteBatch.DrawString(font, "Here's your plate!", new Vector2(125, 200), Color.Black, 0, new Vector2(0, 0), 4.5f, SpriteEffects.None, 0.0f);
+            spriteBatch.DrawString(font, "Your plate is ready!", new Vector2(160, 200), Color.Black, 0, new Vector2(0, 0), 4.5f, SpriteEffects.None, 0.0f);
+            spriteBatch.DrawString(font, "Here are the foods you selected:", new Vector2(160, 365), Color.Purple, 0, new Vector2(0, 0), 2.5f, SpriteEffects.None, 0.0f);
+            
+            /*for (int i = 0; i < 3; i++)
+            {
+                spriteBatch.DrawString(font, selectedFood[i], new Vector2(160, 260), Color.Black, 0, new Vector2(0, 0), 4.5f, SpriteEffects.None, 0.0f);
+            }*/
+            
             spriteBatch.Draw(plate, new Vector2(200, 650), Color.White);
             spriteBatch.End();
         }
@@ -56,7 +68,8 @@ namespace NourishMeant
 
         public override void Update(GameTime gameTime)
         {
-            
+
+    
         }
     }
 }
